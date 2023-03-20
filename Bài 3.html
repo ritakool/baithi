@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    function checkArr(str1,str2){
+    let index;
+    let check;
+    for(let i =0; i < str2.length ; i++){
+        index = str2[i];
+        for (let j = 0 ; j< str1.length; j++ ){
+            if(index === str1[j]){
+                return check = true;
+            }
+        }
+    }
+    return check = false;
+}
+let arr1 = 'co';
+let arr2 = 'gcyom';
+let check = checkArr(arr1,arr2)
+console.log(check)
+</script>
+    
+</body>
+</html>
